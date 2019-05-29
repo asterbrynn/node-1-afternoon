@@ -1,7 +1,7 @@
 const products = require('../products.json');
 
 function getProduct(req, res) {
-	products.map( (val) => {
+	products.map( val => {
 		if (req.params.id == val.id) {
 			res.status(200).send(val)
 		}
